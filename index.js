@@ -15,7 +15,9 @@ function moveDodgerLeft() {
     let leftNumbers = dodger.style.left.replace("px", "");
     let left = parseInt(leftNumbers, 10);
     console.log(left)
-    if (left > 0 && left < 359) {
+    if (left > 0 && left < 359) { 
+        // just copy and paste from readme
+        // added and left < 359 so it wouldn't go offscreen
       dodger.style.left = `${left + 1}px`;
     }
   }
